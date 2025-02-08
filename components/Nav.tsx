@@ -2,8 +2,9 @@
 
 import { useLayoutEffect, useState } from "react";
 import { Button } from "./ui/button";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Twitter } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Nav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -32,15 +33,20 @@ export const Nav = () => {
     >
       <div className="flex-1" />
       <div className="flex-1 flex justify-center">
-        <Image
-          src={isDarkMode ? "/logo-dark.png" : "/logo-light.png"}
-          alt="Logo"
-          width={130}
-          height={31}
-          className="h-12 w-auto"
-        />
+        <Link href="/">
+          <Image
+            src={isDarkMode ? "/logo-dark.png" : "/logo-light.png"}
+            alt="Logo"
+            width={130}
+            height={31}
+            className="h-12 w-auto"
+          />
+        </Link>
       </div>
-      <div className={"flex-1 flex justify-end items-center"}>
+      <div className={"flex-1 flex justify-end items-center gap-2"}>
+        <Link href="https://twitter.com" target="_blank">
+          <Twitter className="size-4" />
+        </Link>
         <Button
           onClick={toggleDark}
           variant={"ghost"}
@@ -53,7 +59,6 @@ export const Nav = () => {
               <Moon className={"size-4"} />
             )}
           </span>
-          <span>{isDarkMode ? "Light" : "Dark"} Mode</span>
         </Button>
       </div>
     </div>
