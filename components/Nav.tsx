@@ -27,7 +27,7 @@ export const Nav = () => {
   return (
     <div
       className={
-        "p-4 flex items-center justify-between z-50 bg-card/80 backdrop-blur-sm border-b border-border absolute w-full"
+        "p-4 flex items-center justify-between z-50 bg-card/80 backdrop-blur-sm border-b border-border w-full"
       }
     >
       <div className="flex-1" />
