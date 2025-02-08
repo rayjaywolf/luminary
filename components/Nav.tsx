@@ -1,11 +1,9 @@
 "use client";
 
 import { useLayoutEffect, useState } from "react";
-import HumeLogo from "./logos/Hume";
 import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
-import Github from "./logos/GitHub";
-import pkg from '@/package.json';
+import Image from "next/image";
 
 export const Nav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -29,33 +27,24 @@ export const Nav = () => {
   return (
     <div
       className={
-        "px-4 py-2 flex items-center h-14 z-50 bg-card border-b border-border"
+        "p-4 flex items-center justify-between z-50 bg-card/80 backdrop-blur-sm border-b border-border absolute w-full"
       }
     >
-      <div>
-        <HumeLogo className={"h-5 w-auto"} />
+      <div className="flex-1" />
+      <div className="flex-1 flex justify-center">
+        <Image
+          src={isDarkMode ? "/logo-dark.png" : "/logo-light.png"}
+          alt="Logo"
+          width={130}
+          height={31}
+          className="h-12 w-auto"
+        />
       </div>
-      <div className={"ml-auto flex items-center gap-1"}>
-        <Button
-          onClick={() => {
-            window.open(
-              pkg.homepage,
-              "_blank",
-              "noopener noreferrer"
-            );
-          }}
-          variant={"ghost"}
-          className={"ml-auto flex items-center gap-1.5"}
-        >
-          <span>
-            <Github className={"size-4"} />
-          </span>
-          <span>Star on GitHub</span>
-        </Button>
+      <div className={"flex-1 flex justify-end items-center"}>
         <Button
           onClick={toggleDark}
           variant={"ghost"}
-          className={"ml-auto flex items-center gap-1.5"}
+          className={"flex items-center gap-1.5"}
         >
           <span>
             {isDarkMode ? (
