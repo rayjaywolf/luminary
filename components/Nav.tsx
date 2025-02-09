@@ -2,7 +2,7 @@
 
 import { useLayoutEffect, useState } from "react";
 import { Button } from "./ui/button";
-import { Moon, Sun, Twitter } from "lucide-react";
+import { Moon, Sun, Twitter, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,23 +42,22 @@ export const Nav = () => {
           />
         </Link>
       </div>
-      <div className={"flex-1 flex justify-end items-center gap-2"}>
+      <div className={"flex-1 flex justify-end items-center gap-4"}>
         <Link href="https://twitter.com" target="_blank">
-          <Twitter className="size-4" />
+          <Twitter className="size-5" />
         </Link>
-        <Button
-          onClick={toggleDark}
-          variant={"ghost"}
-          className={"flex items-center gap-1.5"}
-        >
+        <Link href="https://github.com/rayjaywolf/luminary" target="_blank">
+          <Github className="size-5" />
+        </Link>
+        <Link onClick={toggleDark} href={"#"}>
           <span>
             {isDarkMode ? (
-              <Sun className={"size-4"} />
+              <Sun className={"size-5"} />
             ) : (
-              <Moon className={"size-4"} />
+              <Moon className={"size-5"} />
             )}
           </span>
-        </Button>
+        </Link>
       </div>
     </div>
   );
