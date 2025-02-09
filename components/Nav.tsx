@@ -7,16 +7,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Nav = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true); // Changed to default true
 
   useLayoutEffect(() => {
     const el = document.documentElement;
-
-    if (el.classList.contains("dark")) {
-      setIsDarkMode(true);
-    } else {
-      setIsDarkMode(false);
+    // Add dark class by default
+    if (!el.classList.contains("dark")) {
+      el.classList.add("dark");
     }
+    setIsDarkMode(true);
   }, []);
 
   const toggleDark = () => {
