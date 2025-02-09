@@ -11,8 +11,8 @@ export default function Page() {
       </div>
 
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-20 flex flex-col items-center justify-center min-h-screen">
-        <h1 className="font-playfair text-5xl md:text-7xl text-center font-bold mb-6 max-w-4xl">
+      <div className="container mx-auto px-4 py-20 flex flex-col items-center justify-center min-h-screen ">
+        <h1 className="font-playfair -mt-10 text-5xl md:text-7xl text-center font-bold mb-6 max-w-4xl">
           <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
             Emotional Intelligence
           </span>{" "}
@@ -26,12 +26,15 @@ export default function Page() {
           conversational interface. Connect deeper, understand better.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-4 items-center">
           <Link href="/chat">
             <Button size="lg" className="font-medium">
               Start Conversation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
+          <div className="inline-flex items-center px-4 py-2 mt-8 rounded-full bg-secondary/50 text-md text-muted-foreground border border-border">
+            Contract Address: Coming Soon!
+          </div>
         </div>
       </div>
 
