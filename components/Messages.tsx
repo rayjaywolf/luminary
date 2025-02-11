@@ -31,21 +31,33 @@ const Messages = forwardRef<
                   key={msg.type + index}
                   className={cn(
                     "w-[80%]",
-                    "bg-card",
-                    "border border-border rounded",
-                    msg.type === "user_message" ? "ml-auto" : ""
+                    "bg-card p-4",
+                    "border border-border rounded-lg",
+                    "shadow-lg",
+                    "backdrop-blur-sm",
+                    msg.type === "user_message"
+                      ? "ml-auto bg-primary/10"
+                      : "bg-card/50"
                   )}
                   initial={{
                     opacity: 0,
-                    y: 10,
+                    scale: 0.95,
+                    y: 20,
                   }}
                   animate={{
                     opacity: 1,
+                    scale: 1,
                     y: 0,
                   }}
                   exit={{
                     opacity: 0,
-                    y: 0,
+                    scale: 0.95,
+                    y: -20,
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 500,
+                    damping: 30,
                   }}
                 >
                   <div

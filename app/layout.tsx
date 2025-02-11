@@ -8,7 +8,7 @@ import { cn } from "@/utils";
 export const metadata: Metadata = {
   title: "Luminary AI",
   icons: {
-    icon: '/favicon.ico',
+    icon: "/icon.png",
   },
 };
 
@@ -23,7 +23,9 @@ export default function RootLayout({
         className={cn(
           GeistSans.variable,
           GeistMono.variable,
-          "flex flex-col min-h-screen"
+          "flex flex-col min-h-screen",
+          "bg-gradient-to-b from-background to-background/50", // Added gradient
+          "text-foreground"
         )}
       >
         <Nav />
