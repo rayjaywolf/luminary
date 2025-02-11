@@ -1,25 +1,52 @@
-<div align="center">
-  <img src="https://storage.googleapis.com/hume-public-logos/hume/hume-banner.png">
-  <h1>EVI Next.js App Router Example</h1>
-</div>
+# Luminary AI
 
-![preview.png](preview.png)
+![Luminary AI](public/logo-dark.png)
 
-## Overview
+A sophisticated AI conversation interface powered by Hume AI's emotional intelligence technology and Next.js.
 
-This project features a sample implementation of Hume's [Empathic Voice Interface](https://hume.docs.buildwithfern.com/docs/empathic-voice-interface-evi/overview) using Hume's React SDK. Here, we have a simple EVI that uses the Next.js App Router.
+## Features
 
-## Project deployment
+- 🎭 **Emotion-Aware Conversations**: Utilizes Hume AI's prosody analysis for emotionally intelligent interactions
+- 🌓 **Dark/Light Mode**: Elegant theme switching with system preference support
+- 🎨 **Modern UI**: Built with Tailwind CSS and Shadcn/ui components
+- ⚡ **Real-time Processing**: Fast and responsive voice-based interactions
+- 📱 **Responsive Design**: Optimized for both desktop and mobile experiences
 
-Click the button below to deploy this example project with Vercel:
+## Technology Stack
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhumeai%2Fhume-evi-next-js-starter&env=HUME_API_KEY,HUME_SECRET_KEY)
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn/ui
+- **Animation**: Framer Motion
+- **Voice Processing**: Hume AI SDK
+- **Icons**: Lucide Icons
+- **Fonts**: Geist Font Family
 
-Below are the steps to completing deployment:
+## Project Structure
 
-1. Create a Git Repository for your project.
-2. Provide the required environment variables. To get your API key and Client Secret key, log into the portal and visit the [API keys page](https://beta.hume.ai/settings/keys).
+```
+luminary/
+├── app/                # Next.js app directory
+├── components/         # React components
+├── public/            # Static assets
+├── styles/           # Global styles
+└── utils/            # Utility functions
+```
 
-## Support
+## Contributing
 
-If you have questions, require assistance, or wish to engage in discussions pertaining to this starter template, [please reach out to us on Discord](https://link.hume.ai/discord).
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org) team for the amazing framework
+- [Shadcn/ui](https://ui.shadcn.com) for the beautiful components
+- [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
