@@ -33,7 +33,7 @@ export default function Page() {
             </Button>
           </Link>
           <div className="inline-flex items-center px-4 py-2 mt-8 rounded-full bg-secondary/50 text-md text-muted-foreground border border-border">
-            Contract Address: GxvErrUo2nniHofMmLjLUbXLMMMB74HCbW1gSvvcpump
+            Contract Address: Coming soon
           </div>
         </div>
       </div>
