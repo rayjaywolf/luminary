@@ -7,6 +7,9 @@ import { cn } from "@/utils";
 
 export const metadata: Metadata = {
   title: "Luminary AI",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
