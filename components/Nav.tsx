@@ -43,7 +43,7 @@ export const Nav = () => {
         </Link>
       </div>
       <div className={"flex-1 flex justify-end items-center gap-4"}>
-        <Link href="https://twitter.com" target="_blank">
+        <Link href="https://x.com/luminarytalk" target="_blank">
           <Twitter className="size-5" />
         </Link>
         <Link href="https://github.com/rayjaywolf/luminary" target="_blank">
